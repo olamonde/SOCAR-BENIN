@@ -1,0 +1,6 @@
+{
+  "name": "SOCAR BÉNIN - Concessionnaire Automobile Officiel",
+  "description": "Site officiel de SOCAR Bénin, concessionnaire automobile distributeur officiel Changan, Deepal, Suzuki à Cotonou. Véhicules neufs, électriques, SAV et pièces d'origine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

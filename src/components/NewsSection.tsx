@@ -17,7 +17,7 @@ export const NewsSection: React.FC<NewsSectionProps> = ({
             <div className="text-xs uppercase tracking-wider text-[#e11d48] font-bold mb-2">
               Actualités & Événements
             </div>
-            <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight text-balance">
+            <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight text-balance">
               Dernières nouvelles de la concession.
             </h2>
             <p className="text-sm text-zinc-300 mt-2">

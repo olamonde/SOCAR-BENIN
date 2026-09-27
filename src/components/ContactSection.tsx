@@ -51,7 +51,7 @@ export const ContactSection: React.FC = () => {
           <div className="text-xs uppercase tracking-wider text-[#e11d48] font-bold mb-2">
             Disponibilité & Écoute
           </div>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight text-balance">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight text-balance">
             Contactez SOCAR Bénin.
           </h2>
           <p className="text-sm sm:text-base text-zinc-300 mt-2 leading-relaxed">

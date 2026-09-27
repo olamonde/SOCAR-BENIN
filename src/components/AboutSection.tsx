@@ -13,7 +13,7 @@ export const AboutSection: React.FC = () => {
             <div className="text-xs uppercase tracking-wider text-[#e11d48] font-bold mb-2">
               Institution & Héritage
             </div>
-            <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight text-balance mb-6">
+            <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight text-balance mb-6">
               Plus de 50 ans au service de l&apos;automobile béninoise.
             </h2>
 

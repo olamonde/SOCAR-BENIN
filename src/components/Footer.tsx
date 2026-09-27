@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="lg:col-span-4 space-y-4">
             <button
               onClick={() => onNavigate("accueil")}
-              className="text-left font-display font-black text-2xl text-white tracking-tight cursor-pointer"
+              className="text-left font-display font-bold text-2xl text-white tracking-tight cursor-pointer"
             >
               SOCAR <span className="text-[#e11d48]">BÉNIN</span>
             </button>

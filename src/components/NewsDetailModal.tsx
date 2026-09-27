@@ -35,7 +35,7 @@ export const NewsDetailModal: React.FC<NewsDetailModalProps> = ({
         </div>
 
         <div className="p-6 sm:p-8 max-h-[70vh] overflow-y-auto">
-          <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-snug mb-6">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight leading-snug mb-6">
             {article.title}
           </h2>
 

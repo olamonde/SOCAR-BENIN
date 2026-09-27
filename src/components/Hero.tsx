@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           {/* Powerful Headline */}
-          <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] text-balance mb-5">
+          <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] text-balance mb-5">
             L&apos;automobile autrement.
           </h1>
 

@@ -1,9 +1,64 @@
 @import "tailwindcss";
 
+/* 
+  Architecture typographique SOCAR BÉNIN :
+  1. Plus Jakarta Sans : lettres, textes, titres, descriptions, menus, boutons.
+  2. Syne (Ancienne police automobile) : réservée aux chiffres et informations numériques
+     (prix, années, puissances, cylindrées, kilométrages, statistiques, badges).
+  Grâce à unicode-range U+0030-0039, les chiffres 0-9 utilisent automatiquement Syne en gras/technique,
+  tandis que les lettres, accents et mots utilisent Plus Jakarta Sans de façon fluide et professionnelle.
+*/
+
+@font-face {
+  font-family: 'SyneDigits';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: local('Syne SemiBold'), local('Syne-SemiBold'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2BL9G78HEY.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIS7w4qzmVxsWxjBZRjr0FKM_3mvj6k.ttf') format('truetype');
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'SyneDigits';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Syne SemiBold'), local('Syne-SemiBold'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2BL9G78HEY.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIS7w4qzmVxsWxjBZRjr0FKM_3mvj6k.ttf') format('truetype');
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'SyneDigits';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Syne Bold'), local('Syne-Bold'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2BL9G78HEY.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIS7w4qzmVxsWxjBZRjr0FKM_3fvj6k.ttf') format('truetype');
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'SyneDigits';
+  font-style: normal;
+  font-weight: 800 900;
+  font-display: swap;
+  src: local('Syne ExtraBold'), local('Syne-ExtraBold'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2BL9G78HEY.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/syne/v24/8vIS7w4qzmVxsWxjBZRjr0FKM_24vj6k.ttf') format('truetype');
+  unicode-range: U+0030-0039;
+}
+
 @theme {
-  --font-display: "Syne", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "SyneDigits", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "SyneDigits", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "SyneDigits", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SyneDigits", "Plus Jakarta Sans", monospace;
+  --font-syne: "Syne", sans-serif;
   
   --color-socar-red: #e11d48;
   --color-socar-darkred: #be123c;
@@ -20,8 +75,18 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, .font-display {
-  font-family: var(--font-display);
+h1, h2, h3, h4, h5, h6, .font-display, .font-heading {
+  font-family: var(--font-heading);
+}
+
+button, nav {
+  font-family: var(--font-heading);
+}
+
+/* Explicit technical/number helper classes */
+.font-numeric, .font-digits, .font-syne {
+  font-family: "Syne", "Plus Jakarta Sans", sans-serif;
+  font-feature-settings: "tnum" 1;
 }
 
 /* Custom subtle scrollbar */

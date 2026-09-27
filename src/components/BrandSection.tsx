@@ -17,7 +17,7 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           <div className="text-xs uppercase tracking-wider text-[#e11d48] font-bold mb-2">
             Distribution Officielle & Partenariats
           </div>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight text-balance mb-4">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight text-balance mb-4">
             Nos marques partenaires d&apos;exception.
           </h2>
           <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
@@ -42,7 +42,7 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
                   </span>
                 </div>
 
-                <h3 className="font-display font-extrabold text-2xl text-white tracking-tight mb-1 group-hover:text-zinc-100 transition-colors">
+                <h3 className="font-display font-bold text-2xl text-white tracking-tight mb-1 group-hover:text-zinc-100 transition-colors">
                   {brand.name}
                 </h3>
 

@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center text-left group cursor-pointer focus-visible:outline-none"
             aria-label="SOCAR BÉNIN Accueil"
           >
-            <span className="font-display font-black text-xl sm:text-2xl tracking-tight text-white group-hover:text-zinc-200 transition-colors">
+            <span className="font-display font-bold text-xl sm:text-2xl tracking-tight text-white group-hover:text-zinc-200 transition-colors">
               SOCAR <span className="text-[#e11d48]">BÉNIN</span>
             </span>
           </button>

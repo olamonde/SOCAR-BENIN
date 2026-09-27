@@ -150,7 +150,7 @@ export default function App() {
               <div className="text-xs uppercase tracking-wider text-[#e11d48] font-bold mb-2">
                 Showroom Virtuel & Catalogue Officiel
               </div>
-              <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight text-balance">
+              <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight text-balance">
                 Découvrez nos véhicules neufs disponibles.
               </h2>
               <p className="text-sm sm:text-base text-zinc-300 mt-2 leading-relaxed">

@@ -68,7 +68,7 @@ export const VehicleDetailModal: React.FC<VehicleDetailModalProps> = ({
               <span aria-hidden="true">·</span>
               <span className="text-emerald-400">{vehicle.motorType}</span>
             </div>
-            <h2 className="font-display font-black text-2xl sm:text-4xl text-white tracking-tight">
+            <h2 className="font-display font-bold text-2xl sm:text-4xl text-white tracking-tight">
               {vehicle.name}
             </h2>
             <p className="text-xs sm:text-sm text-zinc-300 max-w-xl hidden sm:block mt-1">
